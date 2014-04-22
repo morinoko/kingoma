@@ -10,14 +10,27 @@
 	  
 	</head>
 	
-<body>
-  <%= link_to "Home", "/" %>
-  <%= link_to "About", "/about" %>
-  <%= link_to "Contact", "/contact" %>
-
-
-	<%= yield %>
-
-</body>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<ul class="nav nav-pills pull-right">
+				  <li><%= link_to "Home", "/" %></li>
+				  <li><%= link_to "About", "/about" %></li>
+				  <li><%= link_to "Contact", "/contact" %></li>
+				</ul>
+			
+				<h1>
+					<%= link_to "kin-goma", "/" %>
+					<h3><small>金髪とごま塩</small></h3>
+				</h1>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4">
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+	</body>
 
 </html>
